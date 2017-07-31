@@ -4,10 +4,12 @@ Hay ocasiones en las que se necesita hacer una operación matemática simple en 
 El problema comienza cuando se llega a una situación en la que si no se hace el cálculo en el orden correcto el resultado final puede llegar a ser erróneo, por ejemplo:
 
 **2+25**
+
 Resultados |
 ------------ |
 20 |
 12 |
+
 ¿Cuál de los dos es el resultado correcto? Bueno el resultado es 12, debido a que primero se tiene que multiplicar y luego dividir, esto lo indican las reglas de **[PEDMAS](http://www.disfrutalasmatematicas.com/operaciones-orden-pemdas.html)**.
 
 ### Notacion Robertiana
