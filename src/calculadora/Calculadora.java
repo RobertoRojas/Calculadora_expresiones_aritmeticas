@@ -208,6 +208,7 @@ public class Calculadora {
     
     private String formatearSentencia(String sentencia){
         if(sentencia.isEmpty())return sentencia;
+        sentencia = sentencia.replaceAll("[\\s]", "");
         sentencia = sentencia.replaceAll("\\)\\(", ")*(");
         String aux = String.valueOf(sentencia.charAt(0));
         for (int i = 1; i < sentencia.length() - 1; i++) {
@@ -215,6 +216,7 @@ public class Calculadora {
             else if(sentencia.charAt(i)==')' && Utileria.isNumero(sentencia.charAt(i + 1)))aux = aux.concat(")*");
             else aux = aux.concat(String.valueOf(sentencia.charAt(i)));
         }
+        System.out.println(sentencia);
         return sentencia.length()>1?aux.concat(String.valueOf(sentencia.charAt(sentencia.length() - 1))):aux;
     }
 }
